@@ -1,0 +1,135 @@
+.navbar {
+    box-shadow: 2px 2px 5px #3292a6;
+    opacity: 0.9;
+    background: #fff; }
+.navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 20px; }
+
+#showcase {
+    position: relative;
+    min-height: 600px;
+}
+#showcase .primary-overlay {
+    background-color : peru;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+input[id="firstName"]:invalid {
+    background-color: #fff; 
+}
+input[id="lastName"]:invalid {
+    background-color:#fff; 
+}
+input[id="ccn"]:invalid {
+    background-color: #fff; 
+}
+input[id="email"]:invalid {
+    background-color:#fff; 
+}
+input[id="mobile"]:invalid {
+    background-color: #fff; 
+}
+input[id="dob"]:invalid {
+    background-color: #fff; 
+}
+input[id="address1"]:invalid {
+    background-color: #fff; 
+}
+
+input[id="model"]:invalid {
+    background-color: #fff; 
+}
+
+textarea[id="address2"]:invalid {
+    background-color: #fff; 
+}
+
+#main-footer{
+	 background-color: #c1a367;
+}
+
+#m1{
+	float:left;
+}
+
+#m2{
+	float:right;
+	text-align:center;
+	padding-left: 100px;
+}
+.body{
+	background-color:Cream;
+	font-family : Times New Roman;
+}
+.title{
+	color: peru ; 
+	text-align : right ; 
+	font-family : Times New Roman;
+	text-align: center;
+	background-color:Cream;
+}
+
+#h2{
+	font-family : Times New Roman;
+	color: peru ; 
+	text-align: center;
+}
+
+#h1{
+	font-family : Times New Roman;
+	text-align: center;
+}
+
+#list{
+	font-family : Times New Roman;
+	font-size : 18 ;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.t1{
+	padding-left:170px;
+	padding-right:170px;
+	font-family : Times New Roman;
+	
+}
+
+body{
+	background-color:Cream;
+}
+
+.right{
+	float : right;
+	padding-right:350px;
+}
+
+.centered {
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+	border-bottom : 10px;
+	border-top : 10px;
+	border-width : 40px;
+	
+}
+
+#table { 
+	cell-padding : 15px;
+	cell-spacing : 40px;
+	font-family : Times New Roman;
+	font-size : 18 ;
+}
+

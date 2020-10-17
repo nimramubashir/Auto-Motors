@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Online</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="home">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h3 class="d-inline align-middle"> Auto Motors </h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="main.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- JOIN -->
+    <section id="join" class="bg-light py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-9 col-xl-9">
+                    <h3>Order Online </h3>
+                    <p class="lead">You order,We deliver.</p>
+                    <form name="orderForm" id="orderForm" action = "orders.php" method = "POST" >
+                        <div class="form-row">
+                            <div class="col-sm-6 col-xl-6 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" id="firstName"
+                                               name="firstname" placeholder="First Name" required
+                                        pattern="^([a-zA-Z]+[\s-]?)*[a-zA-Z]+$">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xl-6 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" id="lastName"
+                                               name="lastname" placeholder="Last Name" required
+                                        pattern="^([a-zA-Z]+[\s-]?)*[a-zA-Z]+$">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-6 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Credit Card Number"
+                                               name="ccn" id="ccn" required
+                                               pattern="^(?:4[0-9]{12}(?:[0-9]{3})?)$">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-6 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Email"
+                                        id="email" name="email" required
+                                        pattern="^[\w\._-]+@(ucp\.edu\.pk|gmail\.com|yahoo\.com|hotmail\.com)$">
+                                    </div>
+                                </div>
+                            </div>
+							
+							
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-4 col-lg-3 col-xl-3 ">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <div class="input-group input-group-lg">
+                                            <input type="text" class="form-control" placeholder="Mobile No"
+                                                   id="mobile" name="mobile" required
+                                                   pattern="^03\d{2}-\d{7}$">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-lg-3 col-xl-3 ">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Date of birth : year-month-day"
+                                        id="dob" name="dob" required
+                                        pattern="^((19(9\d|8\d|7\d|6\d|5\d|4\d))|200[01])-(0?[1-9]|1[012])-(0?[1-9]|((1|2)\d)|3[01])$">
+                                    </div>
+                                </div>
+							</div>
+								
+							<div class="col-sm-3 col-lg-3 col-xl-3">
+								<div class="form-group">
+									<div class="input-group input-group-lg">
+										<input type="text"
+											class="form-control" placeholder="Model"
+                                            id="model" name="model" required
+                                            pattern="^[a-zA-Z]{1}\d{3}$">
+									</div>
+								</div>
+							</div>
+                        </div>
+                            
+						<div class="col-md-6 col-xl-9 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Address line 1 "
+                                        id="address1" name="address1" required />
+                                    </div>
+                                </div>
+                        </div>	
+						  
+						<div class="col-md-6 col-xl-9 col-lg-4">
+                                <div class="form-group">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" class="form-control" placeholder="Address line 2 "
+                                        id="address2" name="address2" optional/>
+                                    </div>
+                                </div>
+                        </div>
+						<div class="col-md-6 col-xl-5 col-lg-4">
+							<input type="submit" value="Order" class="btn btn-info btn-block btn-lg">
+						</div>
+					 </form>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+<footer id="main-footer" class="py-5  text-white" >
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-6 ml-auto">
+                <p class="lead">Copyright &copy; 2018</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
